@@ -1,0 +1,189 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--txt);
+
+    /* outline: 1px solid red; */
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container, .logo{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.picture{
+    background: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 38vw;
+}
+
+.logo{
+    height: 30vh;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: relative;
+    top: 20.5vh;
+    gap: 1vw;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.evil{
+    height:25vh;
+}
+
+.right {
+    width: 60vw;
+    background: #f9f9f9;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.left {
+    padding-left: 3vw;
+    padding-top: 2vh;
+}
+
+.disclaimer{
+    font-weight: 500;
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+.remote-text{
+    margin: 40px 0 80px;
+}
+
+/* form */
+
+.form {
+    background: #E7E7E7;
+    box-shadow: 0 10px 20px -2px rgb(136, 136, 136);
+    height: 55vh;
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    opacity: 65%;
+}
+
+.form-title {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid  #252525
+}
+
+button{
+    background: rgba(0, 0, 0, 0);
+    color: #252525;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: 2px solid #252525;
+    border-radius: 7px;
+    padding: 10px 40px;
+    margin: 40px 0;
+}
+
+button:hover{
+    background: #252525;
+    color: white;
+}
+
+.log-in{
+    display: flex;
+    gap: 5px;
+    padding-bottom: 2vh;
+}
+
+a{
+    text-decoration: none;
+    color: #252525;
+    font-weight: 700;
+}
+
+
+@media only screen and (max-width: 600px){
+    .content{
+        flex-flow: column;
+        height: auto;
+        text-align: center;
+    }
+    .picture{
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        background-size: 100vw;
+    }
+    .logo{
+        width: 100vw;
+        position: static;
+        gap: 10px;
+    }
+    .right{
+        width: auto;
+        height: auto;
+    }
+    .disclaimer{
+        width: auto;
+        margin-top: 30px;
+
+    }
+    .left{
+        padding: 10px 20px;
+    }
+    .remote-text{
+        padding: 20px 0;
+        margin: 0;
+    }
+    .form{
+        flex-flow: column nowrap;
+        align-items: center;
+
+    }
+    .input{
+        text-align: left;
+        width: auto;
+        font-size: 0.9em;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        font-size: 0.9rem;
+        height: 1.5rem;
+        width: 70vw;
+    }
+    .button,
+    .log-in{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    button{
+        margin-bottom: 0px;
+        width: 60vw;
+        padding: 10px 5px;
+    }
+}
+
+.page2 {
+    display: none;
+}
